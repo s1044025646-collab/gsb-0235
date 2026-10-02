@@ -1,0 +1,31 @@
+{
+  "name": "cookie-jar-lab",
+  "version": "1.0.0",
+  "description": "本地 Cookie jar 实验服务：存储 Set-Cookie 并按规则匹配请求（虚构数据，无外部请求）",
+  "type": "module",
+  "bin": {
+    "cookiejar": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "node --import tsx --test test/*.test.ts",
+    "dev": "tsx src/server.ts",
+    "demo": "tsx src/cli.ts demo",
+    "clean": "node -e \"require('fs').rmSync('data',{recursive:true,force:true})\""
+  },
+  "keywords": [
+    "cookie",
+    "jar",
+    "sqlite",
+    "http",
+    "rfc6265",
+    "lab"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3"
+  }
+}
