@@ -1,0 +1,21 @@
+{
+  "name": "cookie-jar-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "本地 Cookie jar 实验服务：多 jar 存储、Set-Cookie 导入、请求匹配报告（纯虚构数据）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test \"test/*.test.ts\"",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/cli.js demo"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}
